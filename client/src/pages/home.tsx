@@ -26,6 +26,7 @@ import {
   Calendar
 } from "lucide-react";
 import { useState } from "react";
+import { certifications } from "@/data/certifications";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -66,6 +67,32 @@ export default function Home() {
       });
     }
     setMobileMenuOpen(false);
+  };
+
+  // Icon mapping for certifications
+  const getIconComponent = (iconName: string) => {
+    const icons = {
+      cloud: Cloud,
+      settings: Settings,
+      shield: Shield,
+      database: Database,
+      server: Server,
+      award: Award,
+    };
+    return icons[iconName as keyof typeof icons] || Award;
+  };
+
+  // Color mapping for certifications
+  const getColorClasses = (color: string) => {
+    const colors = {
+      blue: { bg: "bg-blue-100", icon: "bg-blue-600", badge: "bg-blue-100 text-blue-800" },
+      green: { bg: "bg-green-100", icon: "bg-green-600", badge: "bg-green-100 text-green-800" },
+      purple: { bg: "bg-purple-100", icon: "bg-purple-600", badge: "bg-purple-100 text-purple-800" },
+      orange: { bg: "bg-orange-100", icon: "bg-orange-600", badge: "bg-orange-100 text-orange-800" },
+      teal: { bg: "bg-teal-100", icon: "bg-teal-600", badge: "bg-teal-100 text-teal-800" },
+      indigo: { bg: "bg-indigo-100", icon: "bg-indigo-600", badge: "bg-indigo-100 text-indigo-800" },
+    };
+    return colors[color as keyof typeof colors] || colors.blue;
   };
 
   const skills = [
@@ -431,96 +458,72 @@ export default function Home() {
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Azure Solutions Architect Expert */}
-              <Card className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                <CardContent className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center">
-                      <Award className="w-8 h-8 text-blue-600" />
+              {certifications.map((cert) => {
+                const IconComponent = getIconComponent(cert.icon);
+                const colorClasses = getColorClasses(cert.color);
+                
+                return (
+                  <Card 
+                    key={cert.id}
+                    className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
+                    onClick={() => cert.verificationUrl && window.open(cert.verificationUrl, "_blank")}
+                  >
+                    <CardContent className="p-6">
+                      <div className="flex items-center justify-between mb-4">
+                        <div className={`w-16 h-16 ${colorClasses.bg} rounded-xl flex items-center justify-center`}>
+                          <IconComponent className={`w-8 h-8 text-${cert.color}-600`} />
+                        </div>
+                        <Badge variant="secondary" className={colorClasses.badge}>
+                          {cert.level}
+                        </Badge>
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">
+                        {cert.title}
+                      </h3>
+                      <p className="text-gray-600 mb-2 text-sm font-medium">
+                        {cert.issuer}
+                      </p>
+                      <p className="text-gray-600 mb-4">
+                        {cert.description}
+                      </p>
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center text-sm text-gray-500">
+                          <Calendar className="w-4 h-4 mr-2" />
+                          <span>{new Date(cert.dateObtained).toLocaleDateString('en-US', { 
+                            year: 'numeric', 
+                            month: 'short', 
+                            day: 'numeric' 
+                          })}</span>
+                        </div>
+                        {cert.verificationUrl && (
+                          <ExternalLink className="w-4 h-4 text-gray-400 hover:text-blue-600 transition-colors" />
+                        )}
+                      </div>
+                      {cert.credentialId && (
+                        <div className="mt-3 text-xs text-gray-400">
+                          Credential ID: {cert.credentialId}
+                        </div>
+                      )}
+                    </CardContent>
+                  </Card>
+                );
+              })}
+              
+              {certifications.length === 0 && (
+                <Card className="bg-white rounded-2xl shadow-lg border-2 border-dashed border-gray-300 col-span-full">
+                  <CardContent className="p-12 text-center">
+                    <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                      <Award className="w-8 h-8 text-gray-400" />
                     </div>
-                    <Badge variant="secondary" className="bg-blue-100 text-blue-800">
-                      Expert Level
-                    </Badge>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    Azure Solutions Architect Expert
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    Microsoft Azure certification for designing and implementing solutions
-                  </p>
-                  <div className="flex items-center text-sm text-gray-500">
-                    <Calendar className="w-4 h-4 mr-2" />
-                    <span>Add your certification date</span>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Azure DevOps Engineer Expert */}
-              <Card className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                <CardContent className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center">
-                      <Settings className="w-8 h-8 text-green-600" />
-                    </div>
-                    <Badge variant="secondary" className="bg-green-100 text-green-800">
-                      Expert Level
-                    </Badge>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    Azure DevOps Engineer Expert
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    DevOps practices, CI/CD pipelines, and automation expertise
-                  </p>
-                  <div className="flex items-center text-sm text-gray-500">
-                    <Calendar className="w-4 h-4 mr-2" />
-                    <span>Add your certification date</span>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Azure Fundamentals */}
-              <Card className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                <CardContent className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center">
-                      <Cloud className="w-8 h-8 text-purple-600" />
-                    </div>
-                    <Badge variant="secondary" className="bg-purple-100 text-purple-800">
-                      Fundamental
-                    </Badge>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    Azure Fundamentals
-                  </h3>
-                  <p className="text-gray-600 mb-4">
-                    Foundation knowledge of Microsoft Azure cloud services
-                  </p>
-                  <div className="flex items-center text-sm text-gray-500">
-                    <Calendar className="w-4 h-4 mr-2" />
-                    <span>Add your certification date</span>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Add more certification cards as needed */}
-              <Card className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-2 border-dashed border-gray-300">
-                <CardContent className="p-6 text-center">
-                  <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <Award className="w-8 h-8 text-gray-400" />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-500 mb-2">
-                    Add Your Certification
-                  </h3>
-                  <p className="text-gray-400 mb-4">
-                    Showcase additional professional certifications
-                  </p>
-                  <div className="flex items-center justify-center text-sm text-gray-400">
-                    <Calendar className="w-4 h-4 mr-2" />
-                    <span>Certification date</span>
-                  </div>
-                </CardContent>
-              </Card>
+                    <h3 className="text-xl font-bold text-gray-500 mb-2">
+                      No Certifications Added Yet
+                    </h3>
+                    <p className="text-gray-400 mb-4 max-w-md mx-auto">
+                      Add your professional certifications by editing the <code className="bg-gray-100 px-2 py-1 rounded text-sm">client/src/data/certifications.ts</code> file
+                    </p>
+                  </CardContent>
+                </Card>
+              )}
             </div>
 
             <div className="text-center mt-12">
