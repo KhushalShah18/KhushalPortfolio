@@ -21,7 +21,9 @@ import {
   Menu,
   X,
   GraduationCap,
-  CheckCircle
+  CheckCircle,
+  Award,
+  Calendar
 } from "lucide-react";
 import { useState } from "react";
 
@@ -150,6 +152,12 @@ export default function Home() {
                 Skills
               </button>
               <button
+                onClick={() => scrollToSection("certifications")}
+                className="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium"
+              >
+                Certifications
+              </button>
+              <button
                 onClick={() => scrollToSection("contact")}
                 className="text-gray-600 hover:text-blue-600 transition-colors duration-200 font-medium"
               >
@@ -192,6 +200,12 @@ export default function Home() {
                 className="block w-full text-left py-2 text-gray-700 hover:text-blue-600"
               >
                 Skills
+              </button>
+              <button
+                onClick={() => scrollToSection("certifications")}
+                className="block w-full text-left py-2 text-gray-700 hover:text-blue-600"
+              >
+                Certifications
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
@@ -399,6 +413,128 @@ export default function Home() {
                   </CardContent>
                 </Card>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications Section */}
+      <section id="certifications" className="py-20 bg-slate-50">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="animate-on-scroll">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">🏆 Certifications</h2>
+              <div className="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Professional certifications validating expertise in cloud technologies and systems engineering
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {/* Azure Solutions Architect Expert */}
+              <Card className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <CardContent className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center">
+                      <Award className="w-8 h-8 text-blue-600" />
+                    </div>
+                    <Badge variant="secondary" className="bg-blue-100 text-blue-800">
+                      Expert Level
+                    </Badge>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    Azure Solutions Architect Expert
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    Microsoft Azure certification for designing and implementing solutions
+                  </p>
+                  <div className="flex items-center text-sm text-gray-500">
+                    <Calendar className="w-4 h-4 mr-2" />
+                    <span>Add your certification date</span>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Azure DevOps Engineer Expert */}
+              <Card className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <CardContent className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center">
+                      <Settings className="w-8 h-8 text-green-600" />
+                    </div>
+                    <Badge variant="secondary" className="bg-green-100 text-green-800">
+                      Expert Level
+                    </Badge>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    Azure DevOps Engineer Expert
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    DevOps practices, CI/CD pipelines, and automation expertise
+                  </p>
+                  <div className="flex items-center text-sm text-gray-500">
+                    <Calendar className="w-4 h-4 mr-2" />
+                    <span>Add your certification date</span>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Azure Fundamentals */}
+              <Card className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <CardContent className="p-6">
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center">
+                      <Cloud className="w-8 h-8 text-purple-600" />
+                    </div>
+                    <Badge variant="secondary" className="bg-purple-100 text-purple-800">
+                      Fundamental
+                    </Badge>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">
+                    Azure Fundamentals
+                  </h3>
+                  <p className="text-gray-600 mb-4">
+                    Foundation knowledge of Microsoft Azure cloud services
+                  </p>
+                  <div className="flex items-center text-sm text-gray-500">
+                    <Calendar className="w-4 h-4 mr-2" />
+                    <span>Add your certification date</span>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Add more certification cards as needed */}
+              <Card className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-2 border-dashed border-gray-300">
+                <CardContent className="p-6 text-center">
+                  <div className="w-16 h-16 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <Award className="w-8 h-8 text-gray-400" />
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-500 mb-2">
+                    Add Your Certification
+                  </h3>
+                  <p className="text-gray-400 mb-4">
+                    Showcase additional professional certifications
+                  </p>
+                  <div className="flex items-center justify-center text-sm text-gray-400">
+                    <Calendar className="w-4 h-4 mr-2" />
+                    <span>Certification date</span>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            <div className="text-center mt-12">
+              <p className="text-gray-600 mb-4">
+                Want to verify these certifications? Visit the official Microsoft certification verification portal.
+              </p>
+              <Button
+                variant="outline"
+                className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200"
+                onClick={() => window.open("https://docs.microsoft.com/en-us/learn/certifications/", "_blank")}
+              >
+                <ExternalLink className="mr-2 w-4 h-4" />
+                View Microsoft Certifications
+              </Button>
             </div>
           </div>
         </div>
