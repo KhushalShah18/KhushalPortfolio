@@ -470,8 +470,30 @@ export default function Home() {
                   >
                     <CardContent className="p-6">
                       <div className="flex items-center justify-between mb-4">
-                        <div className={`w-16 h-16 ${colorClasses.bg} rounded-xl flex items-center justify-center`}>
-                          <IconComponent className={`w-8 h-8 text-${cert.color}-600`} />
+                        <div className={`w-16 h-16 ${colorClasses.bg} rounded-xl flex items-center justify-center overflow-hidden`}>
+                          {cert.imageUrl ? (
+                            <img 
+                              src={cert.imageUrl} 
+                              alt={`${cert.title} badge`}
+                              className="w-full h-full object-contain"
+                              onLoad={() => {
+                                console.log(`Successfully loaded: ${cert.imageUrl}`);
+                              }}
+                              onError={(e) => {
+                                console.error(`Failed to load image: ${cert.imageUrl}`);
+                                const target = e.target as HTMLImageElement;
+                                target.style.display = 'none';
+                                const parent = target.parentElement;
+                                if (parent) {
+                                  const icon = parent.querySelector('.fallback-icon');
+                                  if (icon) {
+                                    (icon as HTMLElement).style.display = 'block';
+                                  }
+                                }
+                              }}
+                            />
+                          ) : null}
+                          <IconComponent className={`fallback-icon w-8 h-8 text-${cert.color}-600 ${cert.imageUrl ? 'hidden' : ''}`} />
                         </div>
                         <Badge variant="secondary" className={colorClasses.badge}>
                           {cert.level}
