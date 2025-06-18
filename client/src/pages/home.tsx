@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Button } from "../components/ui/button";
+import { Card, CardContent } from "../components/ui/card";
+import { Badge } from "../components/ui/badge";
 import { 
   Cloud, 
   Settings, 
@@ -26,7 +26,7 @@ import {
   Calendar
 } from "lucide-react";
 import { useState } from "react";
-import { certifications } from "@/data/certifications";
+import { certifications } from "../data/certifications";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
