@@ -633,7 +633,7 @@ export default function Home() {
           <div className="text-center">
             <div className="mb-4">
               <h3 className="text-2xl font-bold text-white">Khushal Shah</h3>
-              <p className="text-gray-400">Systems Engineer | Azure Solutions Architect Expert</p>
+              <p className="text-gray-400">Systems Engineer | Cloud Admin</p>
             </div>
             <div className="flex justify-center space-x-6 mb-8">
               <button
@@ -646,7 +646,7 @@ export default function Home() {
               </button>
             </div>
             <p className="text-gray-500 text-sm">
-              © 2024 Khushal Shah. Built with passion for cloud infrastructure and DevOps excellence.
+              © 2025 Khushal Shah. Built with passion for cloud infrastructure and DevOps excellence.
             </p>
           </div>
         </div>
