@@ -4,7 +4,7 @@ export interface Certification {
   issuer: string;
   description: string;
   dateObtained: string;
-  level: "Fundamental" | "Associate" | "Expert" | "Specialty";
+  level: "Fundamental" | "Associate" | "Expert" | "Specialty" | "Workshop";
   icon: "cloud" | "settings" | "shield" | "database" | "server" | "award";
   color: "blue" | "green" | "purple" | "orange" | "teal" | "indigo";
   credentialId?: string;
@@ -97,7 +97,7 @@ export const certifications: Certification[] = [
     description:
       "Certificate of Completion: Hands-on RedHat Ansible Automation Workshop",
     dateObtained: "2025-04-30",
-    level: "Fundamental",
+    level: "Workshop",
     icon: "cloud",
     color: "green",
     credentialId: "681143a11fe6687ce05c492b",
