@@ -20,14 +20,74 @@ export const certifications: Certification[] = [
     title: "Azure Solutions Architect Expert",
     issuer: "Microsoft",
     description:
-      "Designing and implementing solutions that run on Microsoft Azure",
-    dateObtained: "2024-11-19",
+      "Focuses on designing secure and scalable Azure infrastructure solutions",
+    dateObtained: "2024-11-20",
     level: "Expert",
     icon: "cloud",
-    color: "blue",
+    color: "purple",
     credentialId: "6138295B776ADC97",
     verificationUrl:
       "https://learn.microsoft.com/en-ca/users/khushalshah-1527/credentials/6138295b776adc97?ref=https%3A%2F%2Fwww.linkedin.com%2F",
     imageUrl: "/images/microsoft-expert-badge.png"
   },
+  {
+    id: "az-104",
+    title: "Azure Administrator Associate",
+    issuer: "Microsoft",
+    description:
+      "Validates Azure administration skills including resource, identity, and network management",
+    dateObtained: "2023-09-26",
+    level: "Associate",
+    icon: "cloud",
+    color: "orange",
+    credentialId: "3D9B4615ECA94FCD",
+    verificationUrl:
+      "https://learn.microsoft.com/en-us/users/khushalshah-1527/credentials/3d9b4615eca94fcd?ref=https%3A%2F%2Fwww.linkedin.com%2F",
+    imageUrl: "/images/microsoft-associate-badge.png"
+  },
+  {
+    id: "az-140",
+    title: "Azure Virtual Desktop Speciality",
+    issuer: "Microsoft",
+    description:
+      "Specializes in deploying and managing Azure Virtual Desktop environments",
+    dateObtained: "2023-10-11",
+    level: "Specialty",
+    icon: "cloud",
+    color: "indigo",
+    credentialId: "FD7EA9A371CAC0B6",
+    verificationUrl:
+      "https://learn.microsoft.com/en-us/users/khushalshah-1527/credentials/fd7ea9a371cac0b6?ref=https%3A%2F%2Fwww.linkedin.com%2F",
+    imageUrl: "/images/microsoft-speciality-badge.png"
+  },
+  {
+    id: "az-900",
+    title: "Azure Fundamentals",
+    issuer: "Microsoft",
+    description:
+      "Covers foundational cloud concepts and core Azure services",
+    dateObtained: "2022-12-11",
+    level: "Fundamental",
+    icon: "cloud",
+    color: "green",
+    credentialId: "E4FEFF53CB9AF519",
+    verificationUrl:
+      "https://learn.microsoft.com/en-us/users/khushalshah-1527/credentials/e4feff53cb9af519",
+    imageUrl: "/images/microsoft-fundamentals-badge.png"
+  },
+  {
+    id: "cc",
+    title: "Confluent Fundamentals Accreditation",
+    issuer: "Confluent",
+    description:
+      "Understanding of Apache Kafka and Confluent Platform",
+    dateObtained: "2022-12-11",
+    level: "Fundamental",
+    icon: "cloud",
+    color: "green",
+    credentialId: "E4FEFF53CB9AF519",
+    verificationUrl:
+      "https://learn.microsoft.com/en-us/users/khushalshah-1527/credentials/e4feff53cb9af519",
+    imageUrl: "/images/confluent-fundamentals-badge.png"
+  }
 ];

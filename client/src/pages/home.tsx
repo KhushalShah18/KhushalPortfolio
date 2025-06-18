@@ -470,7 +470,7 @@ export default function Home() {
                   >
                     <CardContent className="p-6">
                       <div className="flex items-center justify-between mb-4">
-                        <div className={`w-16 h-16 ${colorClasses.bg} rounded-xl flex items-center justify-center overflow-hidden`}>
+                        <div className={`w-16 h-16 ${colorClasses.bg} rounded flex items-center justify-center overflow-hidden`}>
                           {cert.imageUrl ? (
                             <img 
                               src={cert.imageUrl} 
@@ -546,20 +546,6 @@ export default function Home() {
                   </CardContent>
                 </Card>
               )}
-            </div>
-
-            <div className="text-center mt-12">
-              <p className="text-gray-600 mb-4">
-                Want to verify these certifications? Visit the official Microsoft certification verification portal.
-              </p>
-              <Button
-                variant="outline"
-                className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 py-2 rounded-lg font-semibold transition-all duration-200"
-                onClick={() => window.open("https://docs.microsoft.com/en-us/learn/certifications/", "_blank")}
-              >
-                <ExternalLink className="mr-2 w-4 h-4" />
-                View Microsoft Certifications
-              </Button>
             </div>
           </div>
         </div>
