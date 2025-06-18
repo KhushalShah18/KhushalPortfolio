@@ -81,13 +81,28 @@ export const certifications: Certification[] = [
     issuer: "Confluent",
     description:
       "Understanding of Apache Kafka and Confluent Platform",
-    dateObtained: "2022-12-11",
+    dateObtained: "2024-07-02",
     level: "Fundamental",
     icon: "cloud",
     color: "green",
-    credentialId: "E4FEFF53CB9AF519",
+    credentialId: "107624971",
     verificationUrl:
-      "https://learn.microsoft.com/en-us/users/khushalshah-1527/credentials/e4feff53cb9af519",
+      "https://certificates.confluent.io/aa1321ae-716d-40a9-b065-c5a71a6e9e38#acc.9Pn6ovMX",
     imageUrl: "/images/confluent-fundamentals-badge.png"
+  },
+  {
+    id: "aap",
+    title: "Red Hat Ansible Automation",
+    issuer: "Unilogik Systems Inc.",
+    description:
+      "Certificate of Completion: Hands-on RedHat Ansible Automation Workshop",
+    dateObtained: "2025-04-30",
+    level: "Fundamental",
+    icon: "cloud",
+    color: "green",
+    credentialId: "681143a11fe6687ce05c492b",
+    verificationUrl:
+      "https://badgr.com/public/assertions/utF97nTNRgqAllfG1oFgfQ",
+    imageUrl: "/images/ansible-workshop-badge.png"
   }
 ];

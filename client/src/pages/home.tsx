@@ -359,14 +359,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              
-              <div className="relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-                  alt="Cloud computing abstract visualization" 
-                  className="rounded-2xl shadow-xl w-full h-auto" 
-                />
-              </div>
             </div>
           </div>
         </div>
@@ -379,7 +371,6 @@ export default function Home() {
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">📚 Education</h2>
               <div className="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
-              <p className="text-xl text-gray-600">Building strong foundations in technology and engineering</p>
             </div>
             
             <div className="max-w-4xl mx-auto">
