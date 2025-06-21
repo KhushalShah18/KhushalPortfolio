@@ -450,7 +450,7 @@ export default function Home() {
                       <p className="text-gray-600 mt-2">Relevant Coursework: Programming using Python, Network Fundamentals, Cloud Computing</p>
                     </div>
                     <div className="flex-shrink-0">
-                      <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center">
+                      <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
                         <img
                           src="/images/seneca-logo.png"
                         />
