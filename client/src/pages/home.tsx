@@ -402,6 +402,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12">
+                  </div>                  
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900">Desktop Admin</h3>
                     <div className="flex justify-between items-center pr-4">
