@@ -291,7 +291,7 @@ export default function Home() {
             
             <div className="relative">
               <img 
-                src="/images/microsoft-speciality-badge.png" 
+                src="/images/systems-engineer-image.jpg" 
                 alt="Professional tech workspace" 
                 className="rounded-2xl shadow-2xl w-full h-auto" 
               />
