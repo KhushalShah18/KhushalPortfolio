@@ -327,7 +327,7 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-1 gap-12 items-center">
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
@@ -415,12 +415,11 @@ export default function Home() {
                       </div>
                     </div>
                     <ul className="list-disc list-inside text-gray-600 space-y-2">
-                      <li>Specialize in automating and optimizing operational processes using Ansible, YAML, and JavaScript.</li>
-                      <li>Develop and manage infrastructure with Terraform (IaC).</li>
-                      <li>Support Azure Kubernetes Service (AKS), API Management (APIM), Confluent Cloud Kafka, application servers, and middleware.</li>
-                      <li>Build and support CI/CD pipelines using tools like Jenkins, ArgoCD & GitHub Actions.</li>
-                      <li>Monitor and log system performance with NewRelic, creating alert systems, dashboards, and synthetic monitoring scripts.</li>
-                      <li>Manage IT infrastructure in Azure Cloud, RedHat Linux, and Solaris.</li>
+                      <li>Engineered Azure Virtual Desktop with multi-session host pools, RemoteApps using MSIX App Attach, and optimized performance.</li>
+                      <li>Automated deallocation of unused resources and scheduled VM start/stop, achieving cost savings.</li>
+                      <li>Implemented Windows Autopilot with Intune for faster device imaging and setup.</li>
+                      <li>Reduced laptop imaging time from 2 hours to under 30 minutes per device</li>
+                      <li>Provide IT Support, Application break/fix support, manage user administration, configure end user devices.</li>
                     </ul>
                   </div>
                 </div>
@@ -447,11 +446,14 @@ export default function Home() {
                     <div className="mb-4 md:mb-0">
                       <h3 className="text-2xl font-bold text-gray-900 mb-2">Computer Engineering & Technology</h3>
                       <p className="text-blue-600 font-semibold text-lg">Seneca College</p>
-                      <p className="text-gray-600 mt-2">Comprehensive program covering software development, systems design, and emerging technologies</p>
+                      <p className="text-gray-600">August 2022</p>
+                      <p className="text-gray-600 mt-2">Relevant Coursework: Programming using Python, Network Fundamentals, Cloud Computing</p>
                     </div>
                     <div className="flex-shrink-0">
                       <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center">
-                        <GraduationCap className="w-8 h-8 text-blue-600" />
+                        <img
+                          src="/images/seneca-logo.png"
+                        />
                       </div>
                     </div>
                   </div>
