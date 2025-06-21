@@ -291,7 +291,7 @@ export default function Home() {
             
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800" 
+                src="/images/microsoft-speciality-badge.png" 
                 alt="Professional tech workspace" 
                 className="rounded-2xl shadow-2xl w-full h-auto" 
               />
