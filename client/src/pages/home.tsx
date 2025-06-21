@@ -383,7 +383,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900">Systems Engineer</h3>
-                    <div className="flex justify-between items-center pr-8">
+                    <div className="flex justify-between items-center pr-4">
                       <div>
                         <p className="text-gray-600">Fundserv</p>
                       </div>
@@ -391,7 +391,14 @@ export default function Home() {
                         <p className="text=gray-600">May 2024 - Present</p>
                       </div>
                     </div>
-                    <p className="text-gray-600">Focused on building robust, scalable systems that can handle enterprise-level workloads while maintaining optimal performance.</p>
+                    <ul className="list-disc list-inside text-gray-600 space-y-2">
+                      <li>Specialize in automating and optimizing operational processes using Ansible, YAML, and JavaScript.</li>
+                      <li>Develop and manage infrastructure with Terraform (IaC).</li>
+                      <li>Support Azure Kubernetes Service (AKS), API Management (APIM), Confluent Cloud Kafka, application servers, and middleware.</li>
+                      <li>Build and support CI/CD pipelines using tools like Jenkins, ArgoCD & GitHub Actions.</li>
+                      <li>Monitor and log system performance with NewRelic, creating alert systems, dashboards, and synthetic monitoring scripts.</li>
+                      <li>Manage IT infrastructure in Azure Cloud, RedHat Linux, and Solaris.</li>
+                    </ul>
                   </div>
                 </div>
                 
