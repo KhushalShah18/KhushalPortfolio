@@ -377,16 +377,20 @@ export default function Home() {
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <img src="/images/fundserv-logo.jpg">
+                    <img 
+                      src="/images/fundserv-logo.jpg" 
+                      alt="FS" 
+                      className="shadow-2xl w-full h-auto" 
+                    />
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">Systems Engineer</h3>
-                    <div class="flex justify-between items-center pr-8">
+                    <div className="flex justify-between items-center pr-8">
                       <div>
-                        <p class="text-gray-600">Fundserv</p>
+                        <p className="text-gray-600">Fundserv</p>
                       </div>  
                       <div>
-                        <p class="text-gray-600">May 2024 - Present</p>
+                        <p className="text-gray-600">May 2024 - Present</p>
                       </div>
                     </div>
                   </div>
