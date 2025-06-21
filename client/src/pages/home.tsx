@@ -143,7 +143,7 @@ export default function Home() {
       badges: ["Cost Optimization", "Monitoring"],
       gradient: "from-indigo-50 to-blue-50",
       iconBg: "bg-indigo-600",
-    },
+    }
   ];
 
   return (
@@ -246,7 +246,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="hero" className="pt-20 min-h-screen flex items-center bg-gradient-to-br from-slate-50 to-blue-50">
+      <section id="hero" className="pt-20 min-h-screen flex items-center bg-gradient-to-br from-white to-slate-50">
         <div className="max-w-6xl mx-auto px-6 py-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-fade-in">
@@ -291,9 +291,9 @@ export default function Home() {
             
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800" 
+                src="/images/systems-engineer-image.jpg" 
                 alt="Professional tech workspace" 
-                className="rounded-2xl shadow-2xl w-full h-auto" 
+                className="rounded-2xl w-full h-auto" 
               />
               <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl border">
                 <div className="flex items-center space-x-3">
@@ -316,7 +316,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white">
+      <section id="about" className="py-20 bg-slate-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="animate-on-scroll">
             <div className="text-center mb-16">
@@ -327,7 +327,7 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-1 gap-12 items-center">
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
@@ -364,6 +364,72 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Work Experience Section */}
+      <section id="about" className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="animate-on-scroll">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">💻 Experience</h2>
+              <div className="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
+            </div>
+            
+            <div className="grid lg:grid-cols-1 gap-12 items-center">
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <img
+                      src="/images/fundserv-logo.jpg"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900">Systems Engineer</h3>
+                    <div className="flex justify-between items-center pr-4">
+                      <div>
+                        <p className="text-gray-600">Fundserv</p>
+                      </div>
+                      <div>
+                        <p className="text=gray-600">May 2024 - Present</p>
+                      </div>
+                    </div>
+                    <ul className="list-disc list-inside text-gray-600 space-y-2">
+                      <li>Specialize in automating and optimizing operational processes using Ansible, YAML, and JavaScript.</li>
+                      <li>Develop and manage infrastructure with Terraform (IaC).</li>
+                      <li>Support Azure Kubernetes Service (AKS), API Management (APIM), Confluent Cloud Kafka, application servers, and middleware.</li>
+                      <li>Build and support CI/CD pipelines using tools like Jenkins, ArgoCD & GitHub Actions.</li>
+                      <li>Monitor and log system performance with NewRelic, creating alert systems, dashboards, and synthetic monitoring scripts.</li>
+                      <li>Manage IT infrastructure in Azure Cloud, RedHat Linux, and Solaris.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12">
+                  </div>                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900">Desktop Admin</h3>
+                    <div className="flex justify-between items-center pr-4">
+                      <div>
+                        <p className="text-gray-600">Fundserv</p>
+                      </div>
+                      <div>
+                        <p className="text=gray-600">Sep 2022 - April 2024</p>
+                      </div>
+                    </div>
+                    <ul className="list-disc list-inside text-gray-600 space-y-2">
+                      <li>Engineered Azure Virtual Desktop with multi-session host pools, RemoteApps using MSIX App Attach, and optimized performance.</li>
+                      <li>Automated deallocation of unused resources and scheduled VM start/stop, achieving cost savings.</li>
+                      <li>Implemented Windows Autopilot with Intune for faster device imaging and setup.</li>
+                      <li>Reduced laptop imaging time from 2 hours to under 30 minutes per device</li>
+                      <li>Provide IT Support, Application break/fix support, manage user administration, configure end user devices.</li>
+                    </ul>
+                  </div>
+                </div>
+                        
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Education Section */}
       <section id="education" className="py-20 bg-slate-50">
         <div className="max-w-6xl mx-auto px-6">
@@ -380,11 +446,14 @@ export default function Home() {
                     <div className="mb-4 md:mb-0">
                       <h3 className="text-2xl font-bold text-gray-900 mb-2">Computer Engineering & Technology</h3>
                       <p className="text-blue-600 font-semibold text-lg">Seneca College</p>
-                      <p className="text-gray-600 mt-2">Comprehensive program covering software development, systems design, and emerging technologies</p>
+                      <p className="text-gray-600">August 2022</p>
+                      <p className="text-gray-600 mt-2">Relevant Coursework: Programming using Python, Network Fundamentals, Cloud Computing</p>
                     </div>
                     <div className="flex-shrink-0">
-                      <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center">
-                        <GraduationCap className="w-8 h-8 text-blue-600" />
+                      <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center">
+                        <img
+                          src="/images/seneca-logo.png"
+                        />
                       </div>
                     </div>
                   </div>
@@ -393,7 +462,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section>      
 
       {/* Skills Section */}
       <section id="skills" className="py-20 bg-white">
