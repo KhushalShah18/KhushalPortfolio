@@ -246,7 +246,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="hero" className="pt-20 min-h-screen flex items-center bg-gradient-to-br from-slate-50 to-blue-50">
+      <section id="hero" className="pt-20 min-h-screen flex items-center bg-gradient-to-br from-white to-slate-50">
         <div className="max-w-6xl mx-auto px-6 py-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-fade-in">
@@ -293,7 +293,7 @@ export default function Home() {
               <img 
                 src="/images/systems-engineer-image.jpg" 
                 alt="Professional tech workspace" 
-                className="rounded-2xl shadow-2xl w-full h-auto" 
+                className="rounded-2xl w-full h-auto" 
               />
               <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl border">
                 <div className="flex items-center space-x-3">
@@ -316,7 +316,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white">
+      <section id="about" className="py-20 bg-slate-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="animate-on-scroll">
             <div className="text-center mb-16">
@@ -365,7 +365,7 @@ export default function Home() {
       </section>
 
       {/* Work Experience Section */}
-      <section id="about" className="py-20 bg-slate-50">
+      <section id="about" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="animate-on-scroll">
             <div className="text-center mb-16">
@@ -432,7 +432,7 @@ export default function Home() {
       </section>
 
       {/* Education Section */}
-      <section id="education" className="py-20 bg-white">
+      <section id="education" className="py-20 bg-slate-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="animate-on-scroll">
             <div className="text-center mb-16">
@@ -463,7 +463,7 @@ export default function Home() {
       </section>      
 
       {/* Skills Section */}
-      <section id="skills" className="py-20 bg-slate-50">
+      <section id="skills" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="animate-on-scroll">
             <div className="text-center mb-16">
@@ -504,7 +504,7 @@ export default function Home() {
       </section>
 
       {/* Certifications Section */}
-      <section id="certifications" className="py-20 bg-white">
+      <section id="certifications" className="py-20 bg-slate-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="animate-on-scroll">
             <div className="text-center mb-16">
