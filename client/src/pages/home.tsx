@@ -401,7 +401,33 @@ export default function Home() {
                     </ul>
                   </div>
                 </div>
-                
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+{/*                     <img
+                      src="/images/fundserv-logo.jpg"
+                    /> */}
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900">Desktop Admin</h3>
+                    <div className="flex justify-between items-center pr-4">
+                      <div>
+                        <p className="text-gray-600">Fundserv</p>
+                      </div>
+                      <div>
+                        <p className="text=gray-600">Sep 2022 - April 2024</p>
+                      </div>
+                    </div>
+                    <ul className="list-disc list-inside text-gray-600 space-y-2">
+                      <li>Specialize in automating and optimizing operational processes using Ansible, YAML, and JavaScript.</li>
+                      <li>Develop and manage infrastructure with Terraform (IaC).</li>
+                      <li>Support Azure Kubernetes Service (AKS), API Management (APIM), Confluent Cloud Kafka, application servers, and middleware.</li>
+                      <li>Build and support CI/CD pipelines using tools like Jenkins, ArgoCD & GitHub Actions.</li>
+                      <li>Monitor and log system performance with NewRelic, creating alert systems, dashboards, and synthetic monitoring scripts.</li>
+                      <li>Manage IT infrastructure in Azure Cloud, RedHat Linux, and Solaris.</li>
+                    </ul>
+                  </div>
+                </div>
+                        
               </div>
             </div>
           </div>
