@@ -364,6 +364,63 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Experience Section */}
+      <section id="work" className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="animate-on-scroll">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">💻 Experience</h2>
+              <div className="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
+{/*               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Passionate about implementing efficient solutions that drive business value and reduce operational costs
+              </p> */}
+            </div>
+            
+            <div className="grid lg:grid-cols-1 gap-12 items-center">
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <img src="/images/fundserv-logo.jpg">
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Systems Engineer</h3>
+                    <div class="flex justify-between items-center pr-8">
+                      <div>
+                        <p class="text-gray-600">Fundserv</p>
+                      </div>  
+                      <div>
+                        <p class="text-gray-600">May 2024 - Present</p>
+                      </div>
+                    </div>
+                    <p className="text-gray-600">Focused on building robust, scalable systems that can handle enterprise-level workloads while maintaining optimal performance.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <Cloud className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Cloud Infrastructure Mastery</h3>
+                    <p className="text-gray-600">Azure Solutions Architect Expert with deep expertise in designing and implementing cloud-native solutions that drive business transformation.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <Heart className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">DevOps Enthusiasm</h3>
+                    <p className="text-gray-600">Passionate about automation, CI/CD pipelines, and creating development workflows that enable teams to deliver high-quality software faster.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Education Section */}
       <section id="education" className="py-20 bg-slate-50">
         <div className="max-w-6xl mx-auto px-6">
