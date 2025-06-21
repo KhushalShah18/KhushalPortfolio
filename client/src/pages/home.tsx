@@ -143,7 +143,7 @@ export default function Home() {
       badges: ["Cost Optimization", "Monitoring"],
       gradient: "from-indigo-50 to-blue-50",
       iconBg: "bg-indigo-600",
-    },
+    }
   ];
 
   return (
@@ -364,8 +364,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Experience Section */}
-      <section id="work" className="py-20 bg-white">
+      {/* Work Experience Section */}
+      <section id="about" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="animate-on-scroll">
             <div className="text-center mb-16">
@@ -377,54 +377,17 @@ export default function Home() {
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <img 
-                      src="/images/fundserv-logo.jpg" 
-                      alt="FS" 
-                      className="shadow-2xl w-full h-auto" 
+                    <img
+                      src="/images/fundserv-logo.jpg"
                     />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">Systems Engineer</h3>
-                    <div className="flex justify-between items-center pr-8">
-                      <div>
-                        <p className="text-gray-600">Fundserv</p>
-                      </div>  
-                      <div>
-                        <p className="text-gray-600">May 2024 - Present</p>
-                      </div>
-                    </div>
+                    <h3 className="text-xl font-semibold text-gray-900">Systems Engineer</h3>
+                    <p className="text-gray-600">Focused on building robust, scalable systems that can handle enterprise-level workloads while maintaining optimal performance.</p>
                   </div>
                 </div>
+                
               </div>
-            </div>
-      </section>
-
-      {/* Education Section */}
-      <section id="education" className="py-20 bg-slate-50">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="animate-on-scroll">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">📚 Education</h2>
-              <div className="w-24 h-1 bg-blue-600 mx-auto mb-4"></div>
-            </div>
-            
-            <div className="max-w-4xl mx-auto">
-              <Card className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <CardContent className="p-8">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                    <div className="mb-4 md:mb-0">
-                      <h3 className="text-2xl font-bold text-gray-900 mb-2">Computer Engineering & Technology</h3>
-                      <p className="text-blue-600 font-semibold text-lg">Seneca College</p>
-                      <p className="text-gray-600 mt-2">Comprehensive program covering software development, systems design, and emerging technologies</p>
-                    </div>
-                    <div className="flex-shrink-0">
-                      <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center">
-                        <GraduationCap className="w-8 h-8 text-blue-600" />
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>
