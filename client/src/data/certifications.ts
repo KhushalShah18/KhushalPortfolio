@@ -73,7 +73,7 @@ export const certifications: Certification[] = [
     credentialId: "B03D956068D909F",
     verificationUrl:
       "https://learn.microsoft.com/en-us/users/khushalshah-1527/credentials/b03d956068d909f?ref=https%3A%2F%2Fwww.linkedin.com%2F",
-    imageUrl: "/images/ai-transformation-leader-badge.png"
+    imageUrl: "/images/microsoft-speciality-badge.png"
   },
   {
     id: "az-900",
