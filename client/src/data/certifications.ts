@@ -61,6 +61,21 @@ export const certifications: Certification[] = [
     imageUrl: "/images/microsoft-speciality-badge.png"
   },
   {
+    id: "ab-731",
+    title: "AI Transformation Leader",
+    issuer: "Microsoft",
+    description:
+      "Specializes in identifying & implementingbusiness value of generative AI solutions",
+    dateObtained: "2026-02-26",
+    level: "Fundamental",
+    icon: "cloud",
+    color: "green",
+    credentialId: "B03D956068D909F",
+    verificationUrl:
+      "https://learn.microsoft.com/en-us/users/khushalshah-1527/credentials/b03d956068d909f?ref=https%3A%2F%2Fwww.linkedin.com%2F",
+    imageUrl: "/images/microsoft-speciality-badge.png"
+  },
+  {
     id: "az-900",
     title: "Azure Fundamentals",
     issuer: "Microsoft",
